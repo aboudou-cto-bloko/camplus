@@ -51,12 +51,21 @@ export const metadata: Metadata = {
     description:
       "Le média étudiant nouvelle génération pour les campus béninois. Actualités, talents, opportunités et vie étudiante.",
     locale: "fr_BJ",
+    images: [
+      {
+        url: `${BASE_URL}/assets/logo-dark.jpeg`,
+        width: 1600,
+        height: 1600,
+        alt: "Campus+ — Le campus en mieux.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Campus+ — Le campus en mieux.",
     description:
       "Le média étudiant nouvelle génération pour les campus béninois. Actualités, talents, opportunités et vie étudiante.",
+    images: [`${BASE_URL}/assets/logo-dark.jpeg`],
   },
   robots: {
     index: true,
