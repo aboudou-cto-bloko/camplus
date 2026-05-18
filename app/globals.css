@@ -4,6 +4,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Empêche le browser dark mode de re-colorier les éléments natifs */
+:root {
+  color-scheme: dark;
+}
+
 @theme inline {
   /* Campus+ Brand Colors */
   --color-campus-green: #8DFF2F;
