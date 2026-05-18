@@ -18,11 +18,61 @@ const archivoBlack = Archivo_Black({
   display: "swap",
 });
 
+const BASE_URL = "https://camplus-bj.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: "Campus+ — Le campus en mieux.",
   description:
-    "Le média étudiant nouvelle génération pour les campus béninois. Actualités, talents, opportunités, vie étudiante.",
-  keywords: ["campus bénin", "étudiants", "ENEAM", "média étudiant", "Cotonou"],
+    "Le média étudiant nouvelle génération pour les campus béninois. Actualités, talents, opportunités et vie étudiante — par les étudiants, pour les étudiants.",
+  keywords: [
+    "Campus+",
+    "campus bénin",
+    "étudiants bénin",
+    "ENEAM",
+    "EPAC",
+    "UAC",
+    "FASEG",
+    "média étudiant",
+    "Cotonou",
+    "université bénin",
+    "actualités campus",
+    "Club Entrepreneuriat ENEAM",
+  ],
+  authors: [{ name: "Campus+", url: BASE_URL }],
+  creator: "Campus+",
+  publisher: "Campus+",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: BASE_URL,
+    siteName: "Campus+",
+    title: "Campus+ — Le campus en mieux.",
+    description:
+      "Le média étudiant nouvelle génération pour les campus béninois. Actualités, talents, opportunités et vie étudiante.",
+    locale: "fr_BJ",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Campus+ — Le campus en mieux.",
+    description:
+      "Le média étudiant nouvelle génération pour les campus béninois. Actualités, talents, opportunités et vie étudiante.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Campus+",
+  url: BASE_URL,
+  description:
+    "Le média étudiant nouvelle génération pour les campus béninois.",
+  logo: `${BASE_URL}/assets/icon-dark.jpeg`,
 };
 
 export default function RootLayout({
@@ -31,6 +81,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${archivoBlack.variable}`}>
       <body className="min-h-full antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <ScrollToTop />
         <CursorGlow />
         <ConvexClientProvider>{children}</ConvexClientProvider>

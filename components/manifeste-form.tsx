@@ -419,7 +419,7 @@ export function VoiceSection() {
   const [step, setStep] = useState(0);
 
   return (
-    <section id="voix" className="bg-campus-black min-h-screen py-32 px-6 md:px-10">
+    <section id="voix" className="bg-campus-black min-h-screen py-20 md:py-32 px-6 md:px-10">
       <div className="max-w-[640px] mx-auto">
         <div className="mb-16">
           <Progress step={step} total={TOTAL} />

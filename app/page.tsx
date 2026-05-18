@@ -99,20 +99,20 @@ function Moment1() {
   return (
     <section
       id="moment-1"
-      className="relative min-h-screen bg-campus-black flex flex-col justify-center py-24 px-6 md:px-16 overflow-hidden"
+      className="relative min-h-screen bg-campus-black flex flex-col justify-center py-16 md:py-24 px-6 md:px-16 overflow-hidden"
     >
       <div className="absolute right-0 top-1/4 w-[500px] h-[500px] bg-campus-green/5 rounded-full blur-[160px] pointer-events-none" />
 
-      <div className="relative max-w-[900px] mx-auto w-full space-y-14">
+      <div className="relative max-w-[900px] mx-auto w-full space-y-10 md:space-y-14">
         <LineReveal className="text-campus-green text-xs uppercase tracking-[0.3em]" delay={0}>
           — Le manifeste · 01
         </LineReveal>
 
-        <div className="space-y-4">
+        <div className="space-y-3 md:space-y-4">
           <MaskReveal
             text="Dans nos universités,"
             as="h2"
-            className="font-heading text-5xl md:text-[5.5rem] text-white/50 leading-none tracking-tight"
+            className="font-heading text-[2.2rem] md:text-[5.5rem] text-white/50 leading-none tracking-tight"
             staggerMs={40}
             delay={100}
             duration={600}
@@ -120,7 +120,7 @@ function Moment1() {
           <MaskReveal
             text="il se passe"
             as="h2"
-            className="font-heading text-5xl md:text-[5.5rem] text-white leading-none tracking-tight"
+            className="font-heading text-[2.2rem] md:text-[5.5rem] text-white leading-none tracking-tight"
             staggerMs={40}
             delay={250}
             duration={600}
@@ -128,7 +128,7 @@ function Moment1() {
           <MaskReveal
             text="ÉNORMÉMENT de choses."
             as="h2"
-            className="font-heading text-5xl md:text-[5.5rem] text-campus-green leading-none tracking-tight"
+            className="font-heading text-[2.2rem] md:text-[5.5rem] text-campus-green leading-none tracking-tight"
             staggerMs={40}
             delay={400}
             duration={700}
@@ -152,7 +152,7 @@ function Moment2() {
   ];
 
   return (
-    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-24 px-6 md:px-16 overflow-hidden">
+    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-16 md:py-24 px-6 md:px-16 overflow-hidden">
       <div className="absolute left-0 top-1/3 w-[400px] h-[400px] bg-campus-green/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="relative max-w-[900px] mx-auto w-full">
@@ -161,7 +161,7 @@ function Moment2() {
           delay={100}
           duration={700}
           distance={50}
-          className="space-y-2"
+          className="space-y-1 md:space-y-2"
         >
           {items.map((item, i) => (
             <p
@@ -186,16 +186,16 @@ function Moment2() {
 ══════════════════════════════════════════════════════════════════════════════ */
 function Moment3() {
   return (
-    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-24 px-6 md:px-16 overflow-hidden">
-      <div className="max-w-[900px] mx-auto w-full space-y-20">
+    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-16 md:py-24 px-6 md:px-16 overflow-hidden">
+      <div className="max-w-[900px] mx-auto w-full space-y-12 md:space-y-20">
         <BigStatement>
-          <p className="font-heading text-3xl md:text-5xl text-white/30 leading-tight">
+          <p className="font-heading text-2xl md:text-5xl text-white/30 leading-tight">
             Et pourtant...
           </p>
         </BigStatement>
 
         <BigStatement>
-          <p className="font-heading text-6xl md:text-[8rem] text-white leading-none tracking-tight">
+          <p className="font-heading text-[2.8rem] md:text-[8rem] text-white leading-none tracking-tight">
             RESTE{" "}
             <ScrambleReveal
               text="INVISIBLE."
@@ -206,7 +206,7 @@ function Moment3() {
           </p>
         </BigStatement>
 
-        <StaggerLines staggerMs={130} delay={200} duration={600} distance={30} className="space-y-4 border-l-2 border-campus-green/20 pl-8">
+        <StaggerLines staggerMs={130} delay={200} duration={600} distance={30} className="space-y-3 md:space-y-4 border-l-2 border-campus-green/20 pl-6 md:pl-8">
           {[
             "L'information circule mal.",
             "Les annonces se perdent.",
@@ -226,8 +226,8 @@ function Moment3() {
 ══════════════════════════════════════════════════════════════════════════════ */
 function Moment4() {
   return (
-    <section className="relative min-h-screen bg-campus-surface/10 flex flex-col justify-center py-24 px-6 md:px-16 overflow-hidden">
-      <div className="max-w-[900px] mx-auto w-full space-y-16">
+    <section className="relative min-h-screen bg-campus-surface/10 flex flex-col justify-center py-16 md:py-24 px-6 md:px-16 overflow-hidden">
+      <div className="max-w-[900px] mx-auto w-full space-y-10 md:space-y-16">
         <LineReveal className="text-campus-green text-xs uppercase tracking-[0.3em]">
           — Le contraste
         </LineReveal>
@@ -292,14 +292,14 @@ function Moment4() {
 ══════════════════════════════════════════════════════════════════════════════ */
 function Moment5() {
   return (
-    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-24 px-6 md:px-16 overflow-hidden">
+    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-16 md:py-24 px-6 md:px-16 overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
         <span className="font-heading text-[20vw] text-white/[0.02] leading-none tracking-tight">
           CROIRE
         </span>
       </div>
 
-      <div className="relative max-w-[900px] mx-auto w-full space-y-16">
+      <div className="relative max-w-[900px] mx-auto w-full space-y-10 md:space-y-16">
         <LineReveal className="text-campus-green text-xs uppercase tracking-[0.3em]">
           — Notre conviction
         </LineReveal>
@@ -308,14 +308,14 @@ function Moment5() {
           <MaskReveal
             text='"Les campus béninois méritent'
             as="blockquote"
-            className="font-heading text-4xl md:text-6xl text-white leading-tight tracking-tight"
+            className="font-heading text-[1.9rem] md:text-6xl text-white leading-tight tracking-tight"
             staggerMs={40}
             duration={700}
           />
           <MaskReveal
             text="une communication à la"
             as="blockquote"
-            className="font-heading text-4xl md:text-6xl text-white/50 leading-tight tracking-tight"
+            className="font-heading text-[1.9rem] md:text-6xl text-white/50 leading-tight tracking-tight"
             staggerMs={40}
             delay={300}
             duration={700}
@@ -323,14 +323,14 @@ function Moment5() {
           <MaskReveal
             text='hauteur de leur potentiel."'
             as="blockquote"
-            className="font-heading text-4xl md:text-6xl text-campus-green leading-tight tracking-tight"
+            className="font-heading text-[1.9rem] md:text-6xl text-campus-green leading-tight tracking-tight"
             staggerMs={40}
             delay={600}
             duration={700}
           />
         </div>
 
-        <StaggerLines staggerMs={100} delay={0} duration={600} distance={32} className="space-y-5">
+        <StaggerLines staggerMs={100} delay={0} duration={600} distance={32} className="space-y-4 md:space-y-5">
           {[
             "Découvrir ce qui se passe, facilement.",
             "Accéder aux opportunités, sans effort.",
@@ -371,13 +371,13 @@ const PROBLEMS = [
 
 function Moment6() {
   return (
-    <section className="relative min-h-screen bg-campus-surface/10 flex flex-col justify-center py-24 px-6 md:px-16 overflow-hidden">
-      <div className="max-w-[900px] mx-auto w-full space-y-16">
+    <section className="relative min-h-screen bg-campus-surface/10 flex flex-col justify-center py-16 md:py-24 px-6 md:px-16 overflow-hidden">
+      <div className="max-w-[900px] mx-auto w-full space-y-10 md:space-y-16">
         <LineReveal className="text-campus-green text-xs uppercase tracking-[0.3em]">
           — Le problème
         </LineReveal>
 
-        <div className="space-y-12">
+        <div className="space-y-10 md:space-y-12">
           {PROBLEMS.map((p, i) => (
             <LineReveal key={p.num} delay={i * 120} duration={700}>
               <div className="flex gap-8 group">
@@ -418,19 +418,19 @@ function Moment6() {
 ══════════════════════════════════════════════════════════════════════════════ */
 function Moment7() {
   return (
-    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-24 px-6 md:px-16 overflow-hidden">
+    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-16 md:py-24 px-6 md:px-16 overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
         <span className="font-heading text-[22vw] text-campus-green/[0.03] leading-none">
           C+
         </span>
       </div>
 
-      <div className="relative max-w-[900px] mx-auto w-full space-y-16">
+      <div className="relative max-w-[900px] mx-auto w-full space-y-10 md:space-y-16">
         <BigStatement>
           <ScrambleReveal
             text="CAMPUS+ EST NÉ DE CE CONSTAT."
             as="h2"
-            className="font-heading text-4xl md:text-7xl text-white leading-none tracking-tight"
+            className="font-heading text-[1.8rem] md:text-7xl text-white leading-tight md:leading-none tracking-tight"
             duration={1500}
             chars="uppercase"
           />
@@ -452,29 +452,29 @@ function Moment7() {
 ══════════════════════════════════════════════════════════════════════════════ */
 function Moment8() {
   return (
-    <section className="relative min-h-screen bg-campus-surface/10 flex flex-col justify-center py-24 px-6 md:px-16 overflow-hidden">
-      <div className="max-w-[900px] mx-auto w-full space-y-16">
+    <section className="relative min-h-screen bg-campus-surface/10 flex flex-col justify-center py-16 md:py-24 px-6 md:px-16 overflow-hidden">
+      <div className="max-w-[900px] mx-auto w-full space-y-10 md:space-y-16">
         <LineReveal className="text-campus-green text-xs uppercase tracking-[0.3em]">
           — Notre ambition
         </LineReveal>
 
-        <StaggerLines staggerMs={250} delay={0} duration={800} distance={60} className="space-y-4">
+        <StaggerLines staggerMs={250} delay={0} duration={800} distance={60} className="space-y-3 md:space-y-4">
           <MaskReveal
             text="Commencer par un campus."
-            className="font-heading text-4xl md:text-[5rem] text-white leading-none tracking-tight"
+            className="font-heading text-[2rem] md:text-[5rem] text-white leading-none tracking-tight"
             staggerMs={35}
             duration={700}
           />
           <MaskReveal
             text="Puis connecter plusieurs."
-            className="font-heading text-4xl md:text-[5rem] text-white/30 leading-none tracking-tight"
+            className="font-heading text-[2rem] md:text-[5rem] text-white/30 leading-none tracking-tight"
             staggerMs={35}
             delay={200}
             duration={700}
           />
           <MaskReveal
             text="Créer un réseau vivant."
-            className="font-heading text-4xl md:text-[5rem] text-campus-green leading-none tracking-tight"
+            className="font-heading text-[2rem] md:text-[5rem] text-campus-green leading-none tracking-tight"
             staggerMs={35}
             delay={400}
             duration={700}
@@ -482,7 +482,7 @@ function Moment8() {
         </StaggerLines>
 
         <BigStatement>
-          <Viewfinder className="p-8 md:p-12 rounded-2xl bg-campus-surface/40" size={22}>
+          <Viewfinder className="p-6 md:p-12 rounded-2xl bg-campus-surface/40" size={22}>
             <MaskReveal
               text={`"Faire en sorte que plus rien d'important sur le campus ne passe inaperçu."`}
               className="font-heading text-2xl md:text-3xl text-white text-center leading-snug"
@@ -501,26 +501,26 @@ function Moment8() {
 ══════════════════════════════════════════════════════════════════════════════ */
 function VoiceTransition() {
   return (
-    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-24 px-6 md:px-16 overflow-hidden">
+    <section className="relative min-h-screen bg-campus-black flex flex-col justify-center py-16 md:py-24 px-6 md:px-16 overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
         <span className="font-heading text-[30vw] text-white/[0.015] leading-none">TOI</span>
       </div>
 
-      <div className="relative max-w-[900px] mx-auto w-full space-y-16">
+      <div className="relative max-w-[900px] mx-auto w-full space-y-10 md:space-y-16">
         <LineReveal className="text-campus-green text-xs uppercase tracking-[0.3em]">
           — Ta voix
         </LineReveal>
 
-        <StaggerLines staggerMs={200} delay={0} duration={800} distance={60} className="space-y-2">
+        <StaggerLines staggerMs={200} delay={0} duration={800} distance={60} className="space-y-1 md:space-y-2">
           <MaskReveal
             text="Maintenant,"
-            className="font-heading text-6xl md:text-[7rem] text-white leading-none tracking-tight"
+            className="font-heading text-[2.8rem] md:text-[7rem] text-white leading-none tracking-tight"
             staggerMs={40}
             duration={700}
           />
           <MaskReveal
             text="c'est ton tour."
-            className="font-heading text-6xl md:text-[7rem] text-campus-green leading-none tracking-tight"
+            className="font-heading text-[2.8rem] md:text-[7rem] text-campus-green leading-none tracking-tight"
             staggerMs={40}
             delay={200}
             duration={700}
