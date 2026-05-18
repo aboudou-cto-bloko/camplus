@@ -17,8 +17,20 @@ import {
 function Hero() {
   return (
     <section className="relative min-h-screen bg-campus-black flex flex-col items-center justify-center overflow-hidden px-6">
+      {/* Background video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        src="/assets/background.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-campus-black/70 z-[1]" />
+      {/* Grid */}
       <div
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0 opacity-[0.03] z-[2]"
         style={{
           backgroundImage:
             "linear-gradient(#8DFF2F 1px, transparent 1px), linear-gradient(90deg, #8DFF2F 1px, transparent 1px)",
@@ -26,7 +38,7 @@ function Hero() {
         }}
       />
 
-      <div className="relative text-center space-y-10 max-w-2xl w-full">
+      <div className="relative z-[3] text-center space-y-10 max-w-2xl w-full">
         {/* Real logo */}
         <div className="animate-in fade-in zoom-in-95 duration-700 fill-mode-both flex justify-center">
           <div className="relative w-52 md:w-64">
@@ -73,7 +85,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-20 flex flex-col items-center gap-1 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-20 z-[3] flex flex-col items-center gap-1 animate-bounce">
         <div className="w-px h-10 bg-gradient-to-b from-white to-transparent" />
       </div>
     </section>
