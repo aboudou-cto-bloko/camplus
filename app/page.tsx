@@ -294,7 +294,7 @@ function Moment5() {
 
         <div className="space-y-1">
           <MaskReveal
-            text='"Les campus africains méritent'
+            text='"Les campus béninois méritent'
             as="blockquote"
             className="font-heading text-4xl md:text-6xl text-white leading-tight tracking-tight"
             staggerMs={40}
